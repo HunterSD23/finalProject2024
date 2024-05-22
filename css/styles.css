@@ -1,0 +1,166 @@
+/*
+Author: Hunter Dettmer
+Date: 4/26/2024
+File Name: styles.css
+*/
+
+/* 
+Fonts: 
+Francois One, sans-serif;
+Roboto Slab, serif; 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100;200;400;900&display=swap');
+
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Styles for body section and all images */
+body {
+	background-color: #6F6F6F;
+}
+
+img {
+	max-width: 100%;
+	display: block; 
+}
+
+footer {
+	text-align: center;
+	color: #fff;
+	font-family: Arial;
+	padding-top: 2%
+}
+
+/* Styles for the mobile viewport, hides desktop viewport */
+
+.desktop {
+	display: none;
+}
+
+.mobile {
+	display: block;
+}
+
+/* Mobile header styles */
+header {
+	text-align: center;
+	padding-top: 7.5px;
+	background-color: #B3B3B3;
+	height: 50px;
+	margin: 0 auto;
+}
+
+header a {
+	text-decoration: none;
+	font-family: 'Francois One', serif;
+}
+
+header a h1 {
+	color: #3761FA;
+}
+
+/* Mobile nav styles */
+.mobile-nav a {
+	display: block;
+	text-decoration: none;
+	color: #D4D4D4;
+	font-family: 'Roboto Slab', sans-serif;
+	text-align: center;
+	font-size: 1.5em; 
+	padding: 1.75%;
+}
+
+.mobile-nav a.menu-icon {
+	display: block; 
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Mobile main styles */
+main {
+	padding: 2%;
+	clear: both;
+	background-color: #37DCFA;
+	font-size: 1.15em;
+	font-family: 'Roboto Slab', serif; 
+	
+}
+
+main p {
+	text-align: left;
+	padding: 1.50%;
+}
+
+/* End of styles for mobile viewport */
+
+/* Begin desktop viewport, hide mobile viewport */
+
+@media screen and (min-width: 630px), print {
+	.desktop {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+	/* Desktop header styles */
+	header {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	/* Desktop nav styles */
+	nav {
+		text-align: center;
+		padding-top: 1.25%;
+		padding-bottom: 1.25%;
+	}
+
+	nav li {
+		display: inline;
+		padding: 3%;
+	}
+	
+	nav a {
+		text-decoration: none;
+		font-family: 'Roboto Slab', sans-serif;
+		padding: 1%;
+		color: #D4D4D4;
+		font-size: 1.5em;
+	}
+	
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+		transform: scale(1.3);
+	}
+	
+	#homeHeroAI {
+		width: 80%;
+		display: inline-block;
+	}
+	
+	main {
+		margin: 1.50%;
+	}
+	
+	main h2 {
+		
+	}
+	
+	main h3 {
+		padding: 1.15%;
+	}
+	
+	main p {
+		padding: 1.50%;
+	}
+}
