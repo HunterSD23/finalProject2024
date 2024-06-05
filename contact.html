@@ -1,14 +1,14 @@
 <!doctype html>
 <!--
 Student Name: Hunter Dettmer
-File Name: template.html
-Date Created: 04/23/2024
+File Name: contact.html
+Date Created: 05/28/2024
 -->
 <html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="Description" content="No description.">
-	<title>Modern AI - Template</title>
+	<title>Modern AI - Contact Us!!</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -43,7 +43,6 @@ Date Created: 04/23/2024
 				<li><a href="current.html">Current AI Techologies</a></li>
 				<li><a href="future.html">Future of AI</a></li>
 				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="template.html">Template Page</a></li>
 			</ul>
 		</nav>
 		
@@ -51,20 +50,33 @@ Date Created: 04/23/2024
 		
 		<!-- Main Content -->
 		<main>
-			<div class="mobile">
-				<h3>This is the Template Page</h3>
+			<div id="form">
+				<form method="get" action="mailto:cte-hunter.dettmer@sllboces.org" class="form-grid">
+					
+					<fieldset>
+						<legend>Please Fill In The Form Below!</legend>
+						
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" required>
+						
+						<label for="lName">Last Name:</label>
+						<input type="text" name="lName" id="lName" required>
+						
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+					</fieldset>
+						
+					<fieldset>
+						<legend>Question Field</legend>
+						
+						<label for="questions">Questions?</label>
+						<textarea id="questions" name="questions"></textarea>
+						
+					</fieldset>
+					
+					<input type="submit" id="submit" value="Submit" class="btn">
 				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsum quasi minus repudiandae dignissimos officiis, debitis placeat vitae eos. Animi beatae, in fugiat. Ipsam dignissimos temporibus corporis nobis, velit incidunt.</p>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam nisi cum debitis illum eius voluptatem aperiam ratione maxime, quas similique reprehenderit sequi quisquam dolorem quidem libero laborum! Adipisci, doloremque, pariatur.</p>
-			</div>
-				
-			<div class="desktop">
-				<h3>This is the Template Page</h3>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nemo necessitatibus ea corporis! Corrupti dicta ducimus tempore explicabo omnis, consequuntur velit, in rerum, aliquid quisquam neque. Sit sequi, ullam ad.</p>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum voluptas omnis impedit similique. Earum atque illum doloremque laborum itaque iusto voluptates aliquid deleniti quod fugiat, excepturi, vel eaque dolorem ea.</p>
+				</form>
 			</div>
 		</main>
 		
@@ -72,7 +84,6 @@ Date Created: 04/23/2024
 		<footer>
 			<div class="copyright">
 				<p>&copy; Copyright 2024. All Rights Reserved.</p>
-				<p>The content used on this page is from <a href="https://ourworldindata.org/brief-history-of-ai" target="_blank">ourworldindata.org</a></p>
 			</div>
 		</footer>
 		
