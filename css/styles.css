@@ -29,12 +29,14 @@ img {
 	display: block; 
 }
 
+/* Styles for footer */
+
 footer {
 	text-align: center;
 	color: #fff;
 	font-family: Arial;
 	padding-top: 1.50%;
-	padding-bottom: 2%;
+	padding-bottom: 1.50%;
 	background-color: #100F0F;
 }
 
@@ -50,7 +52,7 @@ footer a:hover {
 
 /* Styles for the mobile viewport, hides desktop viewport */
 
-.desktop {
+.desktop, .desktop-footer-nav {
 	display: none;
 }
 
@@ -89,11 +91,31 @@ header a h1 {
 	padding: 1.75%;
 }
 
-.mobile-nav a.menu-icon {
+.mobile-nav a .menu-icon {
 	display: block; 
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+#homeHeroAI {
+	display: none;
+}
+
+#historyImage {
+	display: none;
+}
+	
+#currentImage {
+	display: none;
+}
+	
+#futureImage {
+	display: none;
+}
+	
+#contactImage {
+	display: none;
 }
 
 /* Mobile main styles */
@@ -111,7 +133,6 @@ main p {
 	text-align: left;
 	padding: 1.50%;
 }
-
 
 #form {
 	margin-top: 2%;
@@ -144,9 +165,28 @@ form #submit {
 	border: none;
 	display: block;
 	padding: 2%;
-	background: #;
+	background-color: #F2CE5F;
 	font-size: 1em;
 	border-radius: 10px;
+}
+
+.mobile-footer-nav a {
+	display: block;
+	text-decoration: none;
+	color: #D4D4D4;
+	font-family: 'Roboto Slab', sans-serif;
+	text-align: center;
+	font-size: 1.25em; 
+	padding-bottom: 1.75%;
+}
+
+.mobile-footer-nav a:first-child {
+	padding-top: 1.50%;
+}
+
+
+.mobile-footer-nav a:last-child {
+	padding-bottom: 0%;
 }
 
 /* End of styles for mobile viewport */
@@ -158,7 +198,7 @@ form #submit {
 		display: block;
 	}
 	
-	.mobile, .mobile-nav {
+	.mobile, .mobile-nav, .mobile-footer-nav {
 		display: none;
 	}
 	
@@ -196,12 +236,38 @@ form #submit {
 	}
 	
 	#homeHeroAI {
-		width: 80%;
+		width: 100%;
 		display: inline-block;
 	}
 	
+	#historyImage {
+		display: block;
+		float: right;
+		width: 25%;
+	}
+	
+	#currentImage {
+		display: block;
+		float: left;
+		width: 25%;
+		padding-right: 1.25%;
+	}
+	
+	#futureImage {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+	
+	#contactImage {
+		padding-left: 15%;
+		width: 50%;
+		display: block;
+		float: none;
+	}
+	
 	main {
-		margin: 1.50% 1.50% 0.5% 1.50%;
+		margin: 1.50% 1.50% 1.50% 1.50%;
 	}
 	
 	main h2 {
@@ -213,7 +279,7 @@ form #submit {
 	}
 	
 	main p {
-		padding: 1.50%;
+		padding: 1%;
 	}
 	
 	form {
@@ -229,4 +295,30 @@ form #submit {
 	.btn {
 		grid-column: 1 /span 3;
 	}
+	
+	.desktop-footer-nav {
+		display: block;
+		text-align: center;
+		padding-top: 1.50%;
+	}
+
+	.desktop-footer-nav li {
+		display: inline;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	
+	.desktop-footer-nav a {
+		text-decoration: none;
+		font-family: 'Roboto Slab', sans-serif;
+		padding: 1%;
+		color: #D4D4D4;
+		font-size: 1em;
+	}
+	
+	.desktop-footer-nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+	
 }

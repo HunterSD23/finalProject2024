@@ -1,7 +1,7 @@
 // JavaScript Document
 
 function hamburber() {
-	var menu = document.getElementById("menu-links");
+	var menu = document.getElementById("burger-links");
 	var logo = document.getElementById("ai-logo");
 	if (menu.style.display === "block" && logo.style.display === "none") {
 		menu.style.display = "none";
